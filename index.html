@@ -9,6 +9,31 @@
 </head>
 <body>
     
+    <main class="grid-con center-grid-con">
+        <section class="col-span-full">
+            
+            <model-viewer id="speaker-model" src="model/Speaker.gltf" alt="3D Bluetooth speaker." ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.png" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.0019647134578414847m 0.018048816643195766m -0.001482551835785655m" data-normal="0m 1m 0m" data-visibility-attribute="visible" aria-label="AUX Input">
+                    <div class="HotspotAnnotation" id="hotspot-1"></div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-2" data-position="-0.04464151428033154m 0.0030697168168166995m 0.0001491693778535451m" data-normal="-0.4729565164714992m 0.39699161582856274m -0.7865810768693662m" data-visibility-attribute="visible" aria-label="USB-C Charging">
+                    <div class="HotspotAnnotation" id="hotspot-2"></div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-3" data-position="-0.010822942378044216m -0.011614772327866502m 0.010698079378598424m" data-normal="0m -0.1331325987136977m 0.991098234868642m" data-visibility-attribute="visible" aria-label="Fabric Grip">
+                    <div class="HotspotAnnotation" id="hotspot-3"></div>
+                </button>
+                
+                <button class="Hotspot" slot="hotspot-4" data-position="0.00007694754642463379m -0.011690694547943263m 0.010875016405980861m" data-normal="0m 3.422854266688091e-8m 0.9999999999999996m" data-visibility-attribute="visible" aria-label="Bluetooth Controls">
+                    <div class="HotspotAnnotation" id="hotspot-4"></div>
+                </button>
+            </model-viewer>
+        
+        </section>
+    </main>
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
