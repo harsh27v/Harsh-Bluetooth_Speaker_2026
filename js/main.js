@@ -5,12 +5,12 @@
         {
             title: "AUX Input",
             text: "Connect a compatible device through the AUX input for listening with a wired connection.",
-            image: "images/AUX.svg"
+            image: "images/speaker-aux.svg"
         },
         {
             title: "USB-C Charging",
             text: "Connect a USB-C cable to recharge the speaker.",
-            image: "images/USB.svg"
+            image: "images/speaker-usb.svg"
         },
         {
             title: "Fabric Grip",
