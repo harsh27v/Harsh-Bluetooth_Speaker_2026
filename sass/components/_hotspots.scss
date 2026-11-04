@@ -1,0 +1,152 @@
+
+@use "../abstracts/variables" as *;
+
+model-viewer {
+    display: block;
+    width: 100%;
+    height: $model-height-mobile;
+    background-color: $color-white;
+}
+
+.Hotspot {
+    width: $hotspot-size;
+    height: $hotspot-size;
+    padding: 0;
+    border: $hotspot-border-width solid $color-white;
+    border-radius: 50%;
+    background-color: $color-accent;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity $transition-normal, transform $transition-normal, box-shadow $transition-normal;
+}
+
+.Hotspot[data-visible] {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Hotspot:hover, .Hotspot:focus-visible {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 6px rgba(226, 35, 26, 0.15);
+}
+
+.Hotspot:focus-visible {
+    outline: 3px solid $color-focus;
+    outline-offset: 4px;
+}
+
+.HotspotAnnotation {
+    position: absolute;
+    right: 100%;
+    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 120px;
+    max-width: 80vw;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: $color-white;
+    border-top: 3px solid $color-accent;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    color: $color-black;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: break-word;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity $transition-fast, visibility $transition-fast;
+}
+
+.Hotspot:hover .HotspotAnnotation, .Hotspot:focus-visible .HotspotAnnotation {
+    opacity: 1;
+    visibility: visible;
+}
+
+.HotspotAnnotation img {
+    display: block;
+    width: 55px;
+    height: 45px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 7px;
+}
+
+.HotspotAnnotation h2 {
+    color: $color-black;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.HotspotAnnotation p {
+    color: $color-text-secondary;
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    model-viewer {
+        height: $model-height-tablet;
+    }
+
+    .HotspotAnnotation {
+        width: 200px;
+        max-width: 80vw;
+        padding: 12px;
+    }
+
+    .HotspotAnnotation img {
+        width: 60px;
+        height: 50px;
+    }
+
+    .HotspotAnnotation h2 {
+        font-size: 14px;
+    }
+
+    .HotspotAnnotation p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    model-viewer {
+        height: $model-height-desktop;
+    }
+
+    .HotspotAnnotation {
+        width: 230px;
+        max-width: 260px;
+        padding: 14px;
+        right: auto;
+        left: 100%;
+        margin-right: 0;
+        margin-left: 12px;
+    }
+
+    .HotspotAnnotation img {
+        width: 65px;
+        height: 55px;
+        margin-bottom: 9px;
+    }
+
+    .HotspotAnnotation h2 {
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .HotspotAnnotation p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
