@@ -1,1 +1,76 @@
 @use "../abstracts/variables" as *;
+
+.xray-section {
+    width: 100%;
+    padding: 45px 15px 55px;
+    background-color: #151719;
+    text-align: center;
+}
+
+.xray-label {
+    margin-bottom: 25px;
+    color: #A6A9AD;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.xray-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.xray-comparison {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.normal-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#divisor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #151719;
+}
+
+.xray-image {
+    display: block;
+    width: auto;
+    max-width: none;
+    height: 100%;
+}
+
+#divisor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+#slider {
+    display: block;
+    width: 100%;
+    margin: 20px 0 0;
+    cursor: ew-resize;
+    accent-color: #E2231A;
+}
+
+.xray-instruction {
+    margin-top: 25px;
+    color: #A6A9AD;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
