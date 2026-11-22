@@ -4,22 +4,22 @@
 model-viewer {
     display: block;
     width: 100%;
-    height: $model-height-mobile;
-    background-color: $color-white;
+    height: 400px;
+    background-color: #151719;
 }
 
 .Hotspot {
-    width: $hotspot-size;
-    height: $hotspot-size;
+    width: 18px;
+    height: 18px;
     padding: 0;
-    border: $hotspot-border-width solid $color-white;
+    border: 2px solid #FFFFFF;
     border-radius: 50%;
-    background-color: $color-accent;
+    background-color: #E2231A;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
     transform: scale(0.5);
-    transition: opacity $transition-normal, transform $transition-normal, box-shadow $transition-normal;
+    transition: 0.3s;
 }
 
 .Hotspot[data-visible] {
@@ -28,42 +28,31 @@ model-viewer {
     transform: scale(1);
 }
 
-.Hotspot:hover, .Hotspot:focus-visible {
-    transform: scale(1.2);
-    box-shadow: 0 0 0 6px rgba(226, 35, 26, 0.15);
-}
-
+.Hotspot:hover,
 .Hotspot:focus-visible {
-    outline: 3px solid $color-focus;
-    outline-offset: 4px;
+    transform: scale(1.2);
 }
 
 .HotspotAnnotation {
     position: absolute;
     right: 100%;
-    margin-right: 10px;
     top: 50%;
-    transform: translateY(-50%);
     display: block;
     width: 120px;
-    max-width: 80vw;
-    box-sizing: border-box;
+    margin-right: 10px;
     padding: 10px;
-    background-color: $color-white;
-    border-top: 3px solid $color-accent;
-    border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-    color: $color-black;
+    background-color: #FFFFFF;
+    border-top: 3px solid #E2231A;
+    color: #151719;
     text-align: left;
-    white-space: normal;
-    overflow-wrap: break-word;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
-    transition: opacity $transition-fast, visibility $transition-fast;
+    transform: translateY(-50%);
+    transition: 0.2s;
 }
 
-.Hotspot:hover .HotspotAnnotation, .Hotspot:focus-visible .HotspotAnnotation {
+.Hotspot:hover .HotspotAnnotation,
+.Hotspot:focus-visible .HotspotAnnotation {
     opacity: 1;
     visibility: visible;
 }
@@ -73,22 +62,19 @@ model-viewer {
     width: 55px;
     height: 45px;
     object-fit: contain;
-    object-position: center;
     margin-bottom: 7px;
 }
 
 .HotspotAnnotation h2 {
-    color: $color-black;
-    font-size: 13px;
-    font-weight: 700;
     margin: 0 0 6px;
+    font-size: 13px;
 }
 
 .HotspotAnnotation p {
-    color: $color-text-secondary;
+    margin: 0;
+    color: #555555;
     font-size: 11px;
     line-height: 1.5;
-    margin: 0;
 }
 
 @media screen and (min-width: 768px) {
