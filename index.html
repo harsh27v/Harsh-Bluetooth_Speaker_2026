@@ -37,8 +37,22 @@
             </model-viewer>
         
         </section>
-    </main>
+        
+        <section class="col-span-full xray-section">
+            <p class="xray-label">SMALL / INTERNAL VIEW</p>
+            <div class="xray-container">
+                <div class="xray-comparison">
+                    <img class="normal-image" src="images/speaker-normal.png" alt="Normal exterior view of the speaker">
+                    <div id="divisor">
+                        <img class="xray-image" src="images/speaker-xray.png" alt="X-ray view showing the internal speaker components">
+                    </div>
+                </div>
+                <input type="range" min="0" max="100" step="1" value="50" id="slider" aria-label="Reveal the internal speaker components">
+            </div>
+            <p class="xray-instruction">DRAG THE SLIDER TO EXPLORE THE INTERNAL DESIGN</p>
+        </section>
     
+    </main>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
 
