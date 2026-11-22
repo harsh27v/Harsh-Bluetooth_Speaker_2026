@@ -74,3 +74,21 @@
     font-size: 11px;
     letter-spacing: 2px;
 }
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+
+    .xray-section {
+        padding: 60px 30px 70px;
+    }
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+
+    .xray-section {
+        padding: 75px 40px 85px;
+    }
+
+}
