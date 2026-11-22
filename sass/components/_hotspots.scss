@@ -77,16 +77,15 @@ model-viewer {
     line-height: 1.5;
 }
 
+/* TABLET */
 @media screen and (min-width: 768px) {
 
     model-viewer {
-        height: $model-height-tablet;
+        height: 600px;
     }
 
     .HotspotAnnotation {
         width: 200px;
-        max-width: 80vw;
-        padding: 12px;
     }
 
     .HotspotAnnotation img {
@@ -94,45 +93,21 @@ model-viewer {
         height: 50px;
     }
 
-    .HotspotAnnotation h2 {
-        font-size: 14px;
-    }
-
-    .HotspotAnnotation p {
-        font-size: 12px;
-        line-height: 1.5;
-    }
 }
 
+/* DESKTOP */
 @media screen and (min-width: 1200px) {
 
     model-viewer {
-        height: $model-height-desktop;
+        height: 700px;
     }
 
     .HotspotAnnotation {
         width: 230px;
-        max-width: 260px;
-        padding: 14px;
         right: auto;
         left: 100%;
         margin-right: 0;
         margin-left: 12px;
     }
 
-    .HotspotAnnotation img {
-        width: 65px;
-        height: 55px;
-        margin-bottom: 9px;
-    }
-
-    .HotspotAnnotation h2 {
-        font-size: 15px;
-        margin-bottom: 7px;
-    }
-
-    .HotspotAnnotation p {
-        font-size: 12px;
-        line-height: 1.6;
-    }
 }
