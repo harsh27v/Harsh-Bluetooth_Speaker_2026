@@ -1,20 +1,21 @@
+
 (() => {
 
     // Variables
     const infoBoxes = [
         {
             title: "Bluetooth Controls",
-            text: "Use the built-in buttons to adjust the volume and manage music playback.",
+            text: "Adjust the volume and play music using the inbuilt buttons.",
             image: "images/controls.svg"
         },
         {
             title: "Fabric Grip",
-            text: "The textured fabric surface provides a comfortable hold and makes the speaker easier to handle.",
+            text: " The soft texture of the fabric surface gives a comfortable grip and makes it easier to use the speaker.",
             image: "images/fabric.svg"
         },
         {
             title: "AUX Input",
-            text: "Connect a compatible device through the AUX input for listening with a wired connection.",
+            text: "Connect an AUX input to a compatible device to listen using a wired connection.",
             image: "images/speaker-aux.svg"
         },
         {
@@ -24,8 +25,10 @@
         }
     ];
 
-    // Functions
+    const divisor = document.querySelector("#divisor");
+    const slider = document.querySelector("#slider");
 
+    // Functions
     function loadInfo() {
         infoBoxes.forEach((infoBox, index) => {
             const selected = document.querySelector(`#hotspot-${index + 1}`);
@@ -46,8 +49,19 @@
         });
     }
 
-    // Event Listeners
+    function moveDivisor() {
+        divisor.style.width = `${slider.value}%`;
+    }
 
+    function resetSlider() {
+        slider.value = "50";
+        moveDivisor();
+    }
+
+    // Event Listeners
     loadInfo();
+
+    slider.addEventListener("input", moveDivisor);
+    window.addEventListener("load", resetSlider);
 
 })();
