@@ -12,22 +12,28 @@
     <main class="grid-con center-grid-con">
         <section class="col-span-full">
             
-            <model-viewer id="speaker-model" src="model/Speaker.gltf" alt="3D Bluetooth speaker." ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.png" shadow-intensity="1">
-                <button class="Hotspot" slot="hotspot-1" data-position="-0.0019647134578414847m 0.018048816643195766m -0.001482551835785655m" data-normal="0m 1m 0m" data-visibility-attribute="visible" aria-label="AUX Input">
+            <model-viewer id="speaker-model" src="model/Speaker.glb" alt="3D Bluetooth speaker" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.png" shadow-intensity="1">
+
+                <button class="Hotspot" slot="hotspot-1" data-position="-0.017533293316967305m 0.018048816643195766m -0.0006090780577899453m" data-normal="0m 1m 0m" data-visibility-attribute="visible" aria-label="Bluetooth Controls">
                     <div class="HotspotAnnotation" id="hotspot-1"></div>
                 </button>
-                
-                <button class="Hotspot" slot="hotspot-2" data-position="-0.04464151428033154m 0.0030697168168166995m 0.0001491693778535451m" data-normal="-0.4729565164714992m 0.39699161582856274m -0.7865810768693662m" data-visibility-attribute="visible" aria-label="USB-C Charging">
+
+                <button class="Hotspot" slot="hotspot-2" data-position="-0.045828734395354856m 0.0016256548378705618m 0.000569728162072316m" data-normal="-0.8944485792188215m 0.3092443433015352m -0.3230010453070298m" data-visibility-attribute="visible" aria-label="Fabric Grip">
                     <div class="HotspotAnnotation" id="hotspot-2"></div>
                 </button>
-                
-                <button class="Hotspot" slot="hotspot-3" data-position="-0.010822942378044216m -0.011614772327866502m 0.010698079378598424m" data-normal="0m -0.1331325987136977m 0.991098234868642m" data-visibility-attribute="visible" aria-label="Fabric Grip">
+
+                <button class="Hotspot" slot="hotspot-3" data-position="0.00006919139347475595m -0.01147664209983696m 0.01087501639865416m" data-normal="0m 3.422854266688091e-8m 0.9999999999999994m" data-visibility-attribute="visible" aria-label="AUX Input">
                     <div class="HotspotAnnotation" id="hotspot-3"></div>
                 </button>
-                
-                <button class="Hotspot" slot="hotspot-4" data-position="0.00007694754642463379m -0.011690694547943263m 0.010875016405980861m" data-normal="0m 3.422854266688091e-8m 0.9999999999999996m" data-visibility-attribute="visible" aria-label="Bluetooth Controls">
+
+                <button class="Hotspot" slot="hotspot-4" data-position="-0.011355785871232737m -0.011628177651007678m 0.010696278663549642m" data-normal="0m -0.1331325987136977m 0.991098234868642m" data-visibility-attribute="visible" aria-label="USB-C Charging">
                     <div class="HotspotAnnotation" id="hotspot-4"></div>
                 </button>
+
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+
             </model-viewer>
         
         </section>
