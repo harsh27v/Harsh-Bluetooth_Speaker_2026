@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as *;
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+    background-color: #090A0C;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero-label {
+    color: #E2231A;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.hero-content h1 {
+    margin: 25px 0;
+    color: white;
+    font-size: 45px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+}
+
+.hero-description {
+    color: #A6A9AD;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.scroll-text {
+    margin-top: 70px;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.animation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #090A0C;
+}
+
+#explode-view {
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 100vh;
+}
