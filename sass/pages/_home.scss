@@ -56,3 +56,17 @@
     max-width: 1920px;
     max-height: 100vh;
 }
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .hero-content h1 {
+        font-size: 70px;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    .hero-content h1 {
+        font-size: 100px;
+    }
+}
