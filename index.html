@@ -10,6 +10,18 @@
 <body>
     
     <main class="grid-con center-grid-con">
+        <section class="col-span-full hero-section">
+            <div class="hero-content">
+                <p class="hero-label">INTRODUCING SMALL<p>
+                <h1>SMALL SIZE.<br>BIG SOUND.</h1>
+                <p class="hero-description">NEW DIMENSIONS OF SOUND</p>
+                <p class="scroll-text">SCROLL TO EXPLORE↓</p>
+            </div>
+        </section>
+            
+        <section class="col-span-full animation-section" id="speaker-animation">
+            <canvas id="explode-view" aria-label="Bluetooth Animation"></canvas>
+        </section>
         <section class="col-span-full">
             
             <model-viewer id="speaker-model" src="model/Speaker.glb" alt="3D Bluetooth speaker" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.png" shadow-intensity="1">
@@ -54,6 +66,8 @@
     
     </main>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
