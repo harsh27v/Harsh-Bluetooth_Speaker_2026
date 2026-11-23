@@ -20,7 +20,7 @@ This project is the design of an interactive website that will promote a Bluetoo
 - Comparability slider for X-rays: investigate internal parts.
 - GSAP.scroll-based speaker animation
 - Responsive CSS Grid layout
-- Responsive web design for mobile, tablet and desktop devices.Mobile, tablet and desktop responsive web design.
+- Responsive web design for mobile, tablet and desktop devices.
 
 ## 🛠️ Technologies Used
 
@@ -39,21 +39,18 @@ The file does not require any installation, just download and extract the zip fi
 
 ## 🧭 Usage
 
-- Use the navigation bar to get to different parts of the site.
 - Rotate the model for the speaker to see its 3D view from various angles, and zoom in and out.
 - Hover over or focus on the hotspots to see information about the product.
-- Tap AR to view the speaker in your space on the supported device.
 - Use the X-ray slide to view the exterior and inner parts of the speaker.
 - Scroll down to adjust speaker animation and learn about the inside of the speaker.
 - Resize the browser window to check how the responsive layout will appear on different screen sizes.
 
 ## 🕒 History
 
-- This is the last integrated project in which the student will build a website to promote the creation of the Bluetooth Speaker.
 - Designed and produced custom SMALL branding and promotion.
 - Incorporated interactive 3D speaker model (Google Model Viewer)
 - Incorporated interactive hotspots which provide details on products.
-- Improved the ability to compare X-ray images from different angles.
+- Improved the ability to compare X-ray images.
 - Added GSAP based scrolling animation for speakers.
 - Created responsive mobile, tablet and desktop layouts
 
