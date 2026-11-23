@@ -1,9 +1,13 @@
 ## 🔊 Harsh Vasita's promotional website for the Bluetooth Speaker.
-SMALL is a Bluetooth speaker promotional website.SMALL is a promotional website for Bluetooth speakers.
+SMALL is a Bluetooth speaker promotional website.
 
-Welcome to the SMALL Bluetooth Speaker Promotional Website - a product showcase website created for the Final Integrated Project.
+Welcome to the SMALL Bluetooth Speaker Promotional Website - a product showcase website.
 
-The following items are included in this project: a 3D model of a Bluetooth speaker, interactive hotspots, a 3D animation (scroll wheel and slider with X-ray images of the speaker models. Uses semantic HTML, CSS Grid, Sass, JavaScript and GSAP.
+The following items are included in this project:
+- A 3D model of a Bluetooth speaker
+- Interactive hotspots
+- A 3D animation (scrolling animation and slider with X-ray image of the speaker model.)
+- Uses semantic HTML, CSS Grid, Sass, JavaScript and GSAP.
 
 ## 💡 Purpose
 This project is the design of an interactive website that will promote a Bluetooth speaker using the 3D visualization, responsive web design and feature descriptions.
