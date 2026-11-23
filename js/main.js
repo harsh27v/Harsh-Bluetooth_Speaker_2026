@@ -1,4 +1,3 @@
-
 (() => {
 
     // Variables
@@ -27,6 +26,25 @@
 
     const divisor = document.querySelector("#divisor");
     const slider = document.querySelector("#slider");
+    const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1078;
+
+    const frameCount = 181;
+    const images = [];
+
+    const speaker = {
+        frame: 0
+    };
+
+    // Load animation images
+    for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = `images/Animation/${i}.webp`;
+        images.push(img);
+    }
 
     // Functions
     function loadInfo() {
@@ -57,6 +75,45 @@
         slider.value = "50";
         moveDivisor();
     }
+
+    function render() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(images[speaker.frame], 0, 0);
+    }
+
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero text animation
+    gsap.to(".hero-content", {
+        opacity: 0,
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".hero-section",
+            start: "top top",
+            end: "bottom top",
+            scrub: 1
+        }
+    });
+
+    // Speaker scroll animation
+    gsap.to(speaker, {
+        frame: frameCount - 1,
+        ease: "none",
+        snap: "frame",
+        scrollTrigger: {
+            trigger: "#speaker-animation",
+            pin: true,
+            start: "top top",
+            end: "+=2500",
+            scrub: 1
+        },
+        onUpdate: render
+    });
+
+    // When the first image is loaded, call render
+    images[0].addEventListener("load", render);
 
     // Event Listeners
     loadInfo();
