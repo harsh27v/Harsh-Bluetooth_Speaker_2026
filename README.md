@@ -1,21 +1,22 @@
 ## 🔊 Harsh Vasita's promotional website for the Bluetooth Speaker.
-My Bluetooth Speaker Promotion Website is where I put all my 3D modeling, web development and multimedia design skills together to promote my speaker.
+SMALL is a Bluetooth speaker promotional website.SMALL is a promotional website for Bluetooth speakers.
 
-The site includes an interactive 3D model of the Bluetooth speaker with ‘hotspots' for users to click on for information regarding the speaker's products and components.
+Welcome to the SMALL Bluetooth Speaker Promotional Website — a product showcase website created for the Final Integrated Project.
+
+The following items are included in this project: a 3D model of a Bluetooth speaker, interactive hotspots, a 3D animation (scroll wheel and slider with X-ray images of the speaker models. Uses semantic HTML, CSS Grid, Sass, JavaScript and GSAP.
 
 ## 💡 Purpose
-
 This project is the design of an interactive website that will promote a Bluetooth speaker using the 3D visualization, responsive web design and feature descriptions.
 
 ## ✨ Features
 
-- Three dimensional model of an interactive speaker with Bluetooth technology.
-- Clickable 3D hotspots that highlight speaker features that are important.
-- Use images and information to describe features.
-- Rotates and zooms a 3D model.
-- Custom Hotspot Animations and Hover Effects.
-- Hotspot buttons that are easy to access and have labels.
-- Responsive info panels for various screens.
+- ✔️ Interactive 3D speaker model
+- ✔️ 3D product hotspots that are clickable and will have product information.
+- ✔️ Enhanced visualization with Augmented Reality (AR) – it's available for viewing.
+- ✔️ Comparability slider for X-rays: investigate internal parts.
+- ✔️ GSAP.scroll-based speaker animation
+- ✔️ Responsive CSS Grid layout
+- ✔️ Responsive web design for mobile, tablet and desktop devices.Mobile, tablet and desktop responsive web design.
 
 ## 🛠️ Technologies Used
 
@@ -28,36 +29,30 @@ This project is the design of an interactive website that will promote a Bluetoo
 - **Git & GitHub**
 
 ## 💻 Installation
-
 The file does not require any installation, just download and extract the zip file.
 
 ## 🧭 Usage
 
-- Take a look at the 3D Bluetooth speaker model that you can interact with!
-- Move the speaker and zoom to see the speaker from various perspectives.
-- Hover over or focus on the hotspots to check speaker feature info.
-- Check out the AUX input, USB-C charging port, fabric grip and the Bluetooth controls.
-- View the speaker in the environment using AR with compatible mobile device.
-- Resize browser to see the responsive layout on desktop, tablet and mobile.
+- Use the navigation bar to get to different parts of the site.
+- Rotate the model for the speaker to see its 3D view from various angles, and zoom in and out.
+- Hover over or focus on the hotspots to see information about the product.
+- Tap AR to view the speaker in your space on the supported device.
+- Use the X-ray slide to view the exterior and inner parts of the speaker.
+- Scroll down to adjust speaker animation and learn about the inside of the speaker.
+- Resize the browser window to check how the responsive layout will appear on different screen sizes.
 
-## 🕒 Development History
+## 🕒 History
 
-- Designed a 3D model of a Bluetooth speaker using Cinema 4D.
-- Did exported 3D model to be used on the website.
-- Used Google Model Viewer to integrate the model.
-- Including interactive hotspots to emphasise key features of the speaker.
-- Created customized hotspot information panels with JavaScript.
-- Created responsive designs using CSS Grid and media queries.
-- Improved visual quality: Custom animation and hover effects.
-- Conducted a test of the website on various screen sizes.
+- This is the last integrated project in which the student will build a website to promote the creation of the Bluetooth Speaker.
+- Designed and produced custom SMALL branding and promotion.
+- Incorporated interactive 3D speaker model (Google Model Viewer)
+- Incorporated interactive hotspots which provide details on products.
+- Improved the ability to compare X-ray images from different angles.
+- Added GSAP based scrolling animation for speakers.
+- Created responsive mobile, tablet and desktop layouts
 
-## 👨‍💻 About Me
+## Credits
+Harsh Vasita
 
-**Harsh Vasita**  
-- Front-End Developer
-- Interactive Media Design - Fanshawe College
-
-I love coding and creating to craft responsive websites and captivating digital experiences. I still have a lot of ground to cover to improve my front-end development and 3D modeling abilities, along with multimedia design.
-
-## 📄 License
+## License
 MIT License
