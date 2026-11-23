@@ -23,7 +23,9 @@ This project is the design of an interactive website that will promote a Bluetoo
 - **HTML5**
 - **CSS3**
 - **CSS Grid**
+- **Sass(SCSS)**
 - **JavaScript**
+- **GSAP**
 - **Google Model Viewer**
 - **Cinema 4D**
 - **Git & GitHub**
