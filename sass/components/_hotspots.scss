@@ -79,7 +79,6 @@ model-viewer {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-
     model-viewer {
         height: 600px;
     }
@@ -92,12 +91,10 @@ model-viewer {
         width: 60px;
         height: 50px;
     }
-
 }
 
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
-
     model-viewer {
         height: 700px;
     }
@@ -109,5 +106,4 @@ model-viewer {
         margin-right: 0;
         margin-left: 12px;
     }
-
 }
