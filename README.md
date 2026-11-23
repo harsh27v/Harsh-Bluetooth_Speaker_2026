@@ -10,13 +10,13 @@ This project is the design of an interactive website that will promote a Bluetoo
 
 ## ✨ Features
 
- ✔️ Interactive 3D speaker model
- ✔️ 3D product hotspots that are clickable and will have product information.
- ✔️ Enhanced visualization with Augmented Reality (AR) – it's available for viewing.
- ✔️ Comparability slider for X-rays: investigate internal parts.
- ✔️ GSAP.scroll-based speaker animation
- ✔️ Responsive CSS Grid layout
- ✔️ Responsive web design for mobile, tablet and desktop devices.Mobile, tablet and desktop responsive web design.
+- Interactive 3D speaker model
+- 3D product hotspots that are clickable and will have product information.
+- Enhanced visualization with Augmented Reality (AR) – it's available for viewing.
+- Comparability slider for X-rays: investigate internal parts.
+- GSAP.scroll-based speaker animation
+- Responsive CSS Grid layout
+- Responsive web design for mobile, tablet and desktop devices.Mobile, tablet and desktop responsive web design.
 
 ## 🛠️ Technologies Used
 
