@@ -12,7 +12,7 @@
     <main class="grid-con center-grid-con">
         <section class="col-span-full hero-section">
             <div class="hero-content">
-                <p class="hero-label">INTRODUCING SMALL<p>
+                <p class="hero-label">INTRODUCING SMALL</p>
                 <h1>SMALL SIZE.<br>BIG SOUND.</h1>
                 <p class="hero-description">NEW DIMENSIONS OF SOUND</p>
                 <p class="scroll-text">SCROLL TO EXPLORE↓</p>
@@ -20,26 +20,27 @@
         </section>
             
         <section class="col-span-full animation-section" id="speaker-animation">
+            <h2 class="hidden">Speaker Animation</h2>
             <canvas id="explode-view" aria-label="Bluetooth Animation"></canvas>
         </section>
         <section class="col-span-full">
-            
+            <h2 class="hidden">Explore the 3D Speaker</h2>
             <model-viewer id="speaker-model" src="model/Speaker.glb" alt="3D Bluetooth speaker" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.png" shadow-intensity="1">
 
                 <button class="Hotspot" slot="hotspot-1" data-position="-0.017533293316967305m 0.018048816643195766m -0.0006090780577899453m" data-normal="0m 1m 0m" data-visibility-attribute="visible" aria-label="Bluetooth Controls">
-                    <div class="HotspotAnnotation" id="hotspot-1"></div>
+                    <span class="HotspotAnnotation" id="hotspot-1"></span>
                 </button>
 
                 <button class="Hotspot" slot="hotspot-2" data-position="-0.045828734395354856m 0.0016256548378705618m 0.000569728162072316m" data-normal="-0.8944485792188215m 0.3092443433015352m -0.3230010453070298m" data-visibility-attribute="visible" aria-label="Fabric Grip">
-                    <div class="HotspotAnnotation" id="hotspot-2"></div>
+                    <span class="HotspotAnnotation" id="hotspot-2"></span>
                 </button>
 
                 <button class="Hotspot" slot="hotspot-3" data-position="0.00006919139347475595m -0.01147664209983696m 0.01087501639865416m" data-normal="0m 3.422854266688091e-8m 0.9999999999999994m" data-visibility-attribute="visible" aria-label="AUX Input">
-                    <div class="HotspotAnnotation" id="hotspot-3"></div>
+                    <span class="HotspotAnnotation" id="hotspot-3"></span>
                 </button>
 
                 <button class="Hotspot" slot="hotspot-4" data-position="-0.011355785871232737m -0.011628177651007678m 0.010696278663549642m" data-normal="0m -0.1331325987136977m 0.991098234868642m" data-visibility-attribute="visible" aria-label="USB-C Charging">
-                    <div class="HotspotAnnotation" id="hotspot-4"></div>
+                    <span class="HotspotAnnotation" id="hotspot-4"></span>
                 </button>
 
                 <button slot="ar-button" id="ar-button">
@@ -51,6 +52,7 @@
         </section>
         
         <section class="col-span-full xray-section">
+            <h2 class="hidden">Explore the Internal Speaker Design</h2>
             <p class="xray-label">SMALL / INTERNAL VIEW</p>
             <div class="xray-container">
                 <div class="xray-comparison">
